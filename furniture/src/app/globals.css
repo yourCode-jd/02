@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@layer utilities {
+  .container_large {
+    /* @apply 2xl:max-w-[1632px] xl:max-w-[1112px] lg:max-w-[956px] md:max-w-[700px] mx-auto px-4; */
+    @apply 2xl:max-w-[1632px] xl:max-w-full mx-auto px-4;
+  }
+
+  .container {
+    @apply 2xl:max-w-[1432px] xl:max-w-[1312px] lg:max-w-[1056px] md:max-w-[800px] mx-auto px-4;
+  }
+}
