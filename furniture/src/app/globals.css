@@ -11,7 +11,7 @@ body {
 @layer utilities {
   .container_large {
     /* @apply 2xl:max-w-[1632px] xl:max-w-[1112px] lg:max-w-[956px] md:max-w-[700px] mx-auto px-4; */
-    @apply 2xl:max-w-[1632px] xl:max-w-full mx-auto px-4;
+    @apply 2xl:max-w-[1850px] xl:max-w-full mx-auto px-4;
   }
 
   .container {
