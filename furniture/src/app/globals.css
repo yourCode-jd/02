@@ -27,4 +27,8 @@ body {
   .main-heading {
     @apply text-3xl md:text-5xl my-2 sm:my-4 font-medium tracking-[2px] sm:tracking-[8px] text-black;
   }
+
+  .overlay {
+    @apply after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-10 after:z-0
+  }
 }

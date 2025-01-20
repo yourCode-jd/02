@@ -10,7 +10,7 @@ function Header() {
         <div className="text-black text-center text-2xl sm:text-3xl capitalize font-medium leading-normal">
           logo
         </div>
-        <ul className=" hidden md:flex xl:ml-20 ml-10 mr-auto items-center gap-6 md:gap-12">
+        <ul className=" hidden md:flex xl:ml-20 ml-10 mr-auto items-center gap-6 md:gap-10 lg:gap-12">
           {navLinks.map((link) => (
             <Link
               className=" flex items-center uppercase text-[12px] font-medium"
@@ -22,7 +22,7 @@ function Header() {
             </Link>
           ))}
         </ul>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4 ">
           {searchIcon}
           {login}
           {wishlist}
