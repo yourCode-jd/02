@@ -1,6 +1,6 @@
 "use client"
 import React, { use, useState } from "react";
-import { downArrow } from "../Icons/Icons";
+import { downArrow } from "../icons/Icons";
 const Dropdown = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 

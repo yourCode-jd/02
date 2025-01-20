@@ -1,7 +1,7 @@
 import React from "react";
-import { navLinks } from "../NavLinks";
+import { navLinks } from "../navLinks";
 import Link from "next/link";
-import { cart, downArrow, login, searchIcon, wishlist } from "../Icons/Icons";
+import { cart, downArrow, login, searchIcon, wishlist } from "../icons/Icons";
 
 function Header() {
   return (
