@@ -1,10 +1,11 @@
-// import Image from 'next/image'
+import CategoryLayout from "@/components/Category/CategoryLayout"
 import Hero from "@/components/Hero/Hero"
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <Hero />
+      <CategoryLayout />
     </main>
   )
 }

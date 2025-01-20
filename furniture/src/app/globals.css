@@ -18,3 +18,13 @@ body {
     @apply 2xl:max-w-[1432px] xl:max-w-[1312px] lg:max-w-[1056px] md:max-w-[800px] mx-auto px-4;
   }
 }
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-5 mt-7 uppercase bg-black text-white font-normal text-sm sm:text-base min-w-32 sm:min-w-40 min-h-11 sm:min-h-12 shadow-md hover:bg-slate-500 focus:outline-none focus:ring focus:bg-slate-950 focus:ring-opacity-75;
+  }
+
+  .main-heading {
+    @apply text-3xl md:text-5xl my-2 sm:my-4 font-medium tracking-[2px] sm:tracking-[8px] text-black;
+  }
+}
