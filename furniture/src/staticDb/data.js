@@ -1,4 +1,4 @@
-const sales_productData = [
+export const SalesProductData = [
   {
     id: "1",
     img: "/product01.png",
@@ -48,4 +48,3 @@ const sales_productData = [
     alt: "sales product img3",
   },
 ];
-export default sales_productData;

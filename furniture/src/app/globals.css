@@ -35,4 +35,24 @@ body {
   .overlay {
     @apply after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-10 after:z-0
   }
+
+  .swatchRed {
+    @apply cursor-pointer w-[22px] h-[22px] outline-1 outline-double outline-black border-2 border-white hover:border-black bg-red-950 rounded-full
+  }
+
+  .swatchBrown {
+    @apply cursor-pointer w-[22px] h-[22px] outline-1 outline-double outline-black border-2 border-white hover:border-black bg-amber-600 rounded-full
+  }
+
+  .variantSmile {
+    @apply cursor-pointer w-[25px] h-[25px] border border-e-gray-200 hover:border-black flex justify-center items-center text-sm
+  }
+
+  .variantMedium {
+    @apply cursor-pointer w-[25px] h-[25px] border border-e-gray-200 hover:border-black flex justify-center items-center text-sm
+  }
+
+  .productBtn {
+    @apply bg-white flex items-center justify-center w-12 h-12 rounded-sm hover:bg-orange-500 hover:animate-scale2 cursor-pointer
+  }
 }

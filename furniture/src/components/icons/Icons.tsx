@@ -30,11 +30,15 @@ const cart = (
     <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 22h18a1 1 0 0 0 .994-1.11l-2-18A1 1 0 0 0 19 2H5a1 1 0 0 0-.994.89l-1.556 14-.444 4A1 1 0 0 0 3 22M5.9 4h12.2l1.334 12H4.562ZM4.34 18h15.32l.223 2H4.117ZM16 7v2a4 4 0 0 1-8 0V7a1 1 0 0 1 2 0v2a2 2 0 0 0 4 0V7a1 1 0 0 1 2 0" /></svg>
 )
 
+const compare = (
+    <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m10.08 7 1 1 3.44-3.45L11 1l-1 1 1.8 1.8H2v1.4h9.82ZM5.86 9l-1-1-3.44 3.5L4.91 15l1-1-1.81-1.8H14v-1.4H4.1Z" /></svg>
+)
 
 export {
     downArrow,
     searchIcon,
     login,
     wishlist,
-    cart
+    cart,
+    compare
 };
