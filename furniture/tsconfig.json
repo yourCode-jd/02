@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/hero/carousel.jsx", "src/components/hero/Hero.jsx", "src/components/category/CategoryData.jsx", "src/components/category/Category.jsx", "src/components/salesProduct/SalesProduct.jsx", "src/components/salesProduct/ProductVariants.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/hero/carousel.jsx", "src/components/hero/Hero.jsx", "src/components/category/CategoryData.jsx", "src/components/category/Category.jsx", "src/components/salesProduct/SalesProduct.jsx", "src/components/salesProduct/ProductVariants.jsx", "src/components/icons/Icons.js"],
   "exclude": ["node_modules"]
 }

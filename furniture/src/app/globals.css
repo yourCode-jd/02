@@ -2,15 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* == Global Styles == */
 *,
 body {
   margin: 0;
   padding: 0;
 }
 
+/* == Utility Classes == */
 @layer utilities {
+  /* == Container Utilities == */
   .container_large {
-    /* @apply 2xl:max-w-[1632px] xl:max-w-[1112px] lg:max-w-[956px] md:max-w-[700px] mx-auto px-4; */
     @apply 2xl:max-w-[1850px] xl:max-w-full mx-auto px-4;
   }
 
@@ -19,11 +21,14 @@ body {
   }
 }
 
+/* == Component Classes == */
 @layer components {
+  /* == Buttons == */
   .btn-primary {
     @apply py-2 px-5 mt-7 uppercase bg-black text-white font-normal text-sm sm:text-base min-w-32 sm:min-w-40 min-h-11 sm:min-h-12 shadow-md hover:bg-slate-500 focus:outline-none focus:ring focus:bg-slate-950 focus:ring-opacity-75;
   }
 
+  /* == Headings == */
   .banner-heading {
     @apply text-3xl md:text-5xl my-2 sm:my-4 font-medium tracking-[2px] sm:tracking-[8px] text-black;
   }
@@ -32,27 +37,39 @@ body {
     @apply text-2xl md:text-4xl my-2 sm:my-4 font-medium text-black uppercase tracking-[2px] sm:tracking-[6px];
   }
 
+  /* == Overlay Effect == */
   .overlay {
-    @apply after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-10 after:z-0
+    @apply after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-10 after:z-0;
+  }
+
+  /* == Color Swatches == */
+  .swatch {
+    @apply cursor-pointer w-[22px] h-[22px] outline-1 outline-double outline-black border-2 border-white hover:border-black rounded-full;
   }
 
   .swatchRed {
-    @apply cursor-pointer w-[22px] h-[22px] outline-1 outline-double outline-black border-2 border-white hover:border-black bg-red-950 rounded-full
+    @apply bg-red-950 swatch;
   }
 
   .swatchBrown {
-    @apply cursor-pointer w-[22px] h-[22px] outline-1 outline-double outline-black border-2 border-white hover:border-black bg-amber-600 rounded-full
+    @apply bg-amber-600 swatch;
   }
 
-  .variantSmile {
-    @apply cursor-pointer w-[25px] h-[25px] border border-e-gray-200 hover:border-black flex justify-center items-center text-sm
+  /* == Size Variants == */
+  .variant {
+    @apply cursor-pointer w-[25px] h-[25px] border border-e-gray-200 hover:border-black flex justify-center items-center text-sm;
+  }
+
+  .variantSmall {
+    @apply variant;
   }
 
   .variantMedium {
-    @apply cursor-pointer w-[25px] h-[25px] border border-e-gray-200 hover:border-black flex justify-center items-center text-sm
+    @apply variant;
   }
 
+  /* == Product Buttons == */
   .productBtn {
-    @apply bg-white flex items-center justify-center w-12 h-12 rounded-sm hover:bg-orange-500 hover:animate-scale2 cursor-pointer
+    @apply bg-white flex items-center justify-center w-12 h-12 rounded-sm hover:bg-orange-500 hover:animate-scale2 cursor-pointer;
   }
 }

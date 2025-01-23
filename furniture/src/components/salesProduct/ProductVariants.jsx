@@ -1,3 +1,4 @@
+import React from "react";
 import { cart, compare, searchIcon, wishlist } from "../icons/Icons";
 
 // Product Color Swatches
@@ -8,17 +9,17 @@ export const Swatches = () => (
   </ul>
 );
 
-// Product sizes
+// Product Sizes
 export const ProductSize = () => (
   <ul className="flex gap-2 justify-center mt-4">
-    <li className="variantSmile">S</li>
+    <li className="variantSmall">S</li>
     <li className="variantMedium">M</li>
   </ul>
 );
 
-// Product buttons
+// Product Buttons
 export const ProductBtns = () => (
-  <ul className="flex items-center justify-center gap-4 absolute opacity-0 top-0 duration-200 ease-in group-hover:top-4 group-hover:opacity-100 left-1/2 -translate-x-1/2">
+  <ul className="flex items-center justify-center gap-4 absolute opacity-0 bottom-0 duration-200 ease-in group-hover:bottom-4 group-hover:opacity-100 left-1/2 -translate-x-1/2">
     <li className="productBtn">{cart}</li>
     <li className="productBtn">{wishlist}</li>
     <li className="productBtn">{compare}</li>
@@ -26,7 +27,9 @@ export const ProductBtns = () => (
   </ul>
 );
 
-// Product card
-// export const ProductItem = ({ index, item }) => (
-
-// );
+// Product Badge
+export const ProBadge = ({ title }) => (
+  <div className="text-xs text-white bg-orange-500 p-1 px-3 absolute top-3 left-3 rounded-sm">
+    {title}
+  </div>
+);
