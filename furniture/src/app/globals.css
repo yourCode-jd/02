@@ -73,3 +73,14 @@ body {
     @apply bg-white flex items-center justify-center w-12 h-12 rounded-sm hover:bg-orange-500 hover:animate-scale2 cursor-pointer;
   }
 }
+
+.slick-dots li button:before {
+  color: blue;
+  /* Customize dot color */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  /* Customize arrows */
+}

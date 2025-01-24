@@ -6,29 +6,31 @@ export const SalesProductData = [
     alt: "sales product img1",
     badgeTitle: "-5%",
     price: 250,
-    reviews: [
-      {
-        id: "1",
-        author: "Alice",
-        rating: 5,
-        comment: "Great product!",
-        post: [
-          {
-            name: "john",
-            stress: [
-              {
-                level: "john Stress",
-                relief: [
-                  {
-                    name: "john relief",
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    ],
+    post: [{ name: "john" }],
+
+    // reviews: [
+    //   {
+    //     id: "1",
+    //     author: "Alice",
+    //     rating: 5,
+    //     comment: "Great product!",
+    //     post: [
+    //       {
+    //         name: "john",
+    //         stress: [
+    //           {
+    //             level: "john Stress",
+    //             relief: [
+    //               {
+    //                 name: "john relief",
+    //               },
+    //             ],
+    //           },
+    //         ],
+    //       },
+    //     ],
+    //   },
+    // ],
   },
   {
     id: "2",
@@ -93,4 +95,10 @@ export const SalesProductData = [
     price: 240.0,
     post: [{ name: "john" }],
   },
+];
+
+export const slides = [
+  { id: 1, img: "/slide-1.png" },
+  { id: 2, img: "/slide-2.png" },
+  { id: 3, img: "/slide-2.png" },
 ];
