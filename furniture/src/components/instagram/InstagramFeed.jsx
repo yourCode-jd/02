@@ -12,7 +12,7 @@ const InstagramFeed = () => {
     slidesToShow: 6,
     slidesToScroll: 6,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
