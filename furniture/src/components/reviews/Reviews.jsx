@@ -1,21 +1,22 @@
 "use client";
 import React from "react";
+import Image from "next/image";
+import { reviews } from "@/staticDb/data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from "next/image";
-import { slides } from "@/staticDb/data";
-
-const Carousel = () => {
+const Reviews = () => {
   const settings = {
     arrows: false,
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 3000,
+    rows: 0,
+    // centerPadding: "100px",
     nextArrow: (
       <div>
         <svg
@@ -71,39 +72,39 @@ const Carousel = () => {
   };
 
   return (
-    <div className="container">
-      <h2 className="main-heading my-10">Our Blog</h2>
-      <Slider {...settings}>
-        {slides.map((slide) => (
-          <div key={slide.id} className="!flex items-center gap-10 pb-10">
-            <div className="flex items-center justify-center relative h-[450px]">
-              <Image
-                src={slide.img}
-                width={1920}
-                height={800}
-                alt="banner slide"
-                priority
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="relative">
-              <span className="text-xs tracking-[4px] sm:tracking-[8px] inline-block uppercase text-gray-600">
-                NOW ON SALE!
-              </span>
-              <h1 className="banner-heading uppercase text-2xl max-w-[80%]">
-                Embracing Modern Technology in Home Decor
-              </h1>
-              <p className="text-sm sm:text-base max-w-[80%] sm:max-w-[50%] leading-6 sm:leading-7 text-gray-600 font-normal">
-                Every woman needs a wallet to keep her cards and cash organised.
-                Find the perfect one for you in our extensive and varied range.
+    <div className="container_large">
+      <div>
+        <Slider {...settings}>
+          {reviews.map((reviewItem) => (
+            <div
+              key={reviewItem.id}
+              className="border border-gray-200 p-14 w-full m-4"
+            >
+              <div className="flex items-center gap-2">{reviewItem.icon}</div>
+              <h3 className="text-base font-medium my-5">{reviewItem.title}</h3>
+              <p className="text-sm my-8 text-gray-400">
+                {reviewItem.description}
               </p>
-              <button className="btn-primary">Shop Now</button>
+              <div className="flex items-center gap-5 mt-5">
+                <div className="h-[75px] w-[75px] group cursor-pointer rounded-full overflow-hidden">
+                  <Image
+                    src={reviewItem.img}
+                    width={120}
+                    height={120}
+                    alt={reviewItem.alt}
+                    className="group-hover:animate-scale3"
+                  />
+                </div>
+                <h4 className="text-sm font-normal text-gray-500 tracking-widest">
+                  {reviewItem.imgTitle}
+                </h4>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
 
-export default Carousel;
+export default Reviews;

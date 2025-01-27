@@ -74,13 +74,10 @@ body {
   }
 }
 
-.slick-dots li button:before {
-  color: blue;
-  /* Customize dot color */
+.slick-slider .slick-dots li button:before {
+  font-size: 14px;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-  /* Customize arrows */
+.slick-slider {
+  margin-bottom: 80px;
 }

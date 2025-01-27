@@ -1,3 +1,5 @@
+import { startIcon } from "@/components/icons/Icons";
+
 export const SalesProductData = [
   {
     id: "1",
@@ -98,7 +100,86 @@ export const SalesProductData = [
 ];
 
 export const slides = [
-  { id: 1, img: "/slide-1.png" },
-  { id: 2, img: "/slide-2.png" },
-  { id: 3, img: "/slide-2.png" },
+  { id: 1, img: "/slide-1.png", alt: "blog wrap" },
+  { id: 2, img: "/slide-2.png", alt: "blog wrap" },
+  { id: 3, img: "/slide-2.png", alt: "blog wrap" },
+];
+
+export const logoSlides = [
+  { id: 1, img: "/brand-1.png", alt: "brand logo" },
+  { id: 2, img: "/brand-2.png", alt: "brand logo" },
+  { id: 3, img: "/brand-3.png", alt: "brand logo" },
+  { id: 4, img: "/brand-4.png", alt: "brand logo" },
+  { id: 5, img: "/brand-5.png", alt: "brand logo" },
+  { id: 6, img: "/brand-6.png", alt: "brand logo" },
+];
+
+export const categorySlides = [
+  {
+    id: 1,
+    img: "/category_1.png",
+    alt: "brand logo",
+    title: "CABINET",
+  },
+  {
+    id: 2,
+    img: "/category_2.png",
+    alt: "brand logo",
+    title: "STOOL",
+  },
+  {
+    id: 3,
+    img: "/category_3.jpg",
+    alt: "brand logo",
+    title: "TABLE",
+  },
+  {
+    id: 4,
+    img: "/category_1.png",
+    alt: "brand logo",
+    title: "SOFA",
+  },
+];
+
+export const reviews = [
+  {
+    id: 1,
+    icon: [startIcon, startIcon, startIcon, startIcon, startIcon],
+    title: "“UAMO EXCEEDED MY EXPECTATIONS.”",
+    imgTitle: "DENISSE B.",
+    description:
+      "Let me start by saying, I love, love, love, Decorilla. Thanks so much for capturing my vision and bringing my ordinary space to a...",
+    img: "/category_1.png",
+    alt: "brand logo",
+  },
+  {
+    id: 2,
+    icon: [startIcon, startIcon, startIcon, startIcon, startIcon],
+    title: "“ABSOLUTELY LOVED UAMO!!!!!”",
+    imgTitle: "EVELYN HANSON",
+    description:
+      "Apart from helping with the design and selecting pieces, Uamo helps with ordering, which is great and saves so much.",
+    img: "/category_2.png",
+    alt: "brand logo",
+  },
+  {
+    id: 3,
+    icon: [startIcon, startIcon, startIcon, startIcon],
+    title: "“EXCELLENT PIECE OF WORK”",
+    imgTitle: "LINDA",
+    description:
+      "Let me start by saying, I love, love, love, Decorilla. Thanks so much for capturing my vision and bringing my ordinary space to a...",
+    img: "/category_3.jpg",
+    alt: "brand logo",
+  },
+  {
+    id: 4,
+    icon: [startIcon, startIcon, startIcon, startIcon, startIcon],
+    title: "“I LOVE ALMO”",
+    imgTitle: "JENNIFER D.",
+    description:
+      "I’m impressed by the quality and variety of organic options available at this store. The range of locally sourced organic fruits…",
+    img: "/category_1.png",
+    alt: "brand logo",
+  },
 ];
