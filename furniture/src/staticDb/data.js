@@ -144,42 +144,107 @@ export const categorySlides = [
 export const reviews = [
   {
     id: 1,
-    icon: [startIcon, startIcon, startIcon, startIcon, startIcon],
-    title: "“UAMO EXCEEDED MY EXPECTATIONS.”",
-    imgTitle: "DENISSE B.",
+    icon: Array.from({ length: 3 }, (_, index) => (
+      <span key={index}>{startIcon}</span>
+    )),
+    title: "“UAM EXCEEDED MY EXPECTATIONS.”",
+    imgTitle: "DENISE B.",
     description:
-      "Let me start by saying, I love, love, love, Decorilla. Thanks so much for capturing my vision and bringing my ordinary space to a...",
+      "Let me start by saying, I love, love, love, Decrial. Thanks so much for capturing my vision and bringing my ordinary space to a...",
     img: "/category_1.png",
     alt: "brand logo",
   },
   {
     id: 2,
-    icon: [startIcon, startIcon, startIcon, startIcon, startIcon],
-    title: "“ABSOLUTELY LOVED UAMO!!!!!”",
+    icon: Array.from({ length: 4 }, (_, index) => (
+      <div key={index}>{startIcon}</div>
+    )),
+    title: "“ABSOLUTELY LOVED UAM!!!!!”",
     imgTitle: "EVELYN HANSON",
     description:
-      "Apart from helping with the design and selecting pieces, Uamo helps with ordering, which is great and saves so much.",
+      "Apart from helping with the design and selecting pieces, Uam helps with ordering, which is great and saves so much.",
     img: "/category_2.png",
     alt: "brand logo",
   },
   {
     id: 3,
-    icon: [startIcon, startIcon, startIcon, startIcon],
+    icon: Array.from({ length: 5 }, (_, index) => (
+      <div key={index}>{startIcon}</div>
+    )),
     title: "“EXCELLENT PIECE OF WORK”",
     imgTitle: "LINDA",
     description:
-      "Let me start by saying, I love, love, love, Decorilla. Thanks so much for capturing my vision and bringing my ordinary space to a...",
+      "Let me start by saying, I love, love, love, Decrial. Thanks so much for capturing my vision and bringing my ordinary space to a...",
     img: "/category_3.jpg",
     alt: "brand logo",
   },
   {
     id: 4,
-    icon: [startIcon, startIcon, startIcon, startIcon, startIcon],
+    icon: Array.from({ length: 4 }, (_, index) => (
+      <div key={index}>{startIcon}</div>
+    )),
     title: "“I LOVE ALMO”",
     imgTitle: "JENNIFER D.",
     description:
       "I’m impressed by the quality and variety of organic options available at this store. The range of locally sourced organic fruits…",
     img: "/category_1.png",
+    alt: "brand logo",
+  },
+  {
+    id: 5,
+    icon: Array.from({ length: 4 }, (_, index) => (
+      <div key={index}>{startIcon}</div>
+    )),
+    title: "“ABSOLUTELY LOVED UAM!!!!!”",
+    imgTitle: "EVELYN HANSON",
+    description:
+      "Apart from helping with the design and selecting pieces, Uam helps with ordering, which is great and saves so much.",
+    img: "/category_2.png",
+    alt: "brand logo",
+  },
+  {
+    id: 6,
+    icon: Array.from({ length: 5 }, (_, index) => (
+      <div key={index}>{startIcon}</div>
+    )),
+    title: "“EXCELLENT PIECE OF WORK”",
+    imgTitle: "LINDA",
+    description:
+      "Let me start by saying, I love, love, love, Decrial. Thanks so much for capturing my vision and bringing my ordinary space to a...",
+    img: "/category_3.jpg",
+    alt: "brand logo",
+  },
+];
+
+export const InstItems = [
+  {
+    id: 1,
+    img: "/category_1.png",
+    alt: "brand logo",
+  },
+  {
+    id: 2,
+    img: "/category_2.png",
+    alt: "brand logo",
+  },
+  {
+    id: 3,
+    img: "/category_3.jpg",
+    alt: "brand logo",
+  },
+  {
+    id: 4,
+    img: "/category_2.png",
+    alt: "brand logo",
+  },
+  {
+    id: 5,
+    img: "/category_1.png",
+    alt: "brand logo",
+  },
+  {
+    id: 6,
+    img: "/category_3.jpg",
     alt: "brand logo",
   },
 ];

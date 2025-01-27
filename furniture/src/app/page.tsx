@@ -6,6 +6,7 @@ import Blog from "@/components/blog/blog"
 import Brands from "@/components/brands/Brands"
 import Category from "@/components/category/Category"
 import Reviews from "@/components/reviews/Reviews"
+import Instagram from "@/components/instagram/InstagramFeed"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Brands />
       <Category />
       <Reviews />
+      <Instagram />
     </main>
   )
 }

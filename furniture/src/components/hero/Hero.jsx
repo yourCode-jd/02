@@ -8,7 +8,7 @@ function Hero() {
         width={1920}
         height={800}
         alt="banner slide"
-        property=""
+        priority
         className="w-full h-full object-cover"
       />
       <div className="absolute xl:left-60 lg:left-40 left-5 top-1/2 -translate-y-1/2">

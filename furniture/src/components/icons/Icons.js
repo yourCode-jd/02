@@ -80,7 +80,7 @@ export const startIcon = (
     viewBox="0 0 36 36"
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
-    class="iconify iconify--twemoji"
+    className="iconify iconify--twemoji"
   >
     <path
       fill="#FFAC33"
