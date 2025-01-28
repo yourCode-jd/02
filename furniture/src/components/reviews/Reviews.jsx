@@ -36,23 +36,20 @@ const Reviews = () => {
       <div className="pt-20">
         <Slider {...settings}>
           {reviews.map((reviewItem) => (
-            <div
-              key={reviewItem.id}
-              className="border border-gray-200 p-14 !w-[98%] mb-5 "
-            >
+            <div key={reviewItem.id} className="border border-gray-200 p-14 ">
               <div className="flex items-center gap-2">{reviewItem.icon}</div>
               <h3 className="text-base font-medium my-5">{reviewItem.title}</h3>
               <p className="text-sm my-8 text-gray-400">
                 {reviewItem.description}
               </p>
               <div className="flex items-center gap-5 mt-5">
-                <div className="h-[75px] w-[75px] group cursor-pointer rounded-full overflow-hidden">
+                <div className="h-[75px] w-[75px] cursor-pointer rounded-full overflow-hidden">
                   <Image
                     src={reviewItem.img}
                     width={120}
                     height={120}
                     alt={reviewItem.alt}
-                    className="group-hover:animate-scale3"
+                    className=""
                   />
                 </div>
                 <h4 className="text-sm font-normal text-gray-500 tracking-widest">

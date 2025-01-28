@@ -42,13 +42,16 @@ const InstagramFeed = () => {
     <div className="container_large">
       <Slider {...settings}>
         {InstItems.map((InstItem) => (
-          <div className="h-[300px] w-[300px] group cursor-pointer overflow-hidden group overlay[scale:0.4]">
+          <div
+            key={InstItem.id}
+            className="h-[300px] w-[300px] group cursor-pointer overflow-hidden group"
+          >
             <Image
               src={InstItem.img}
               width={300}
               height={300}
               alt={InstItem.alt}
-              className="group-hover:animate-scale3 group-hover:overlay[scale:1]"
+              className=""
             />
           </div>
         ))}

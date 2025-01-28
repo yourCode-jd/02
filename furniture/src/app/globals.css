@@ -84,3 +84,7 @@ body {
 .slick-slider {
   margin-bottom: 80px;
 } */
+
+.slick-initialized .slick-slide>div {
+  padding: 20px;
+}
