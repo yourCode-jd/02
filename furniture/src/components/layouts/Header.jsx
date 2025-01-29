@@ -1,7 +1,7 @@
 import React from "react";
-import { navLinks } from "../navLinks";
+import { navLinks, navIcons } from "../navLinks";
 import Link from "next/link";
-import { cart, downArrow, login, searchIcon, wishlist } from "../icons/Icons";
+import { downArrow } from "../icons/Icons";
 
 function Header() {
   const renderSubMenu = (subMenu) =>
@@ -45,7 +45,7 @@ function Header() {
         </div>
         <nav className="hidden md:flex xl:ml-20 ml-10 mr-auto items-center gap-6 md:gap-10 lg:gap-12">
           {navLinks.map((link) => (
-            <li key={link.key} className="group list-none">
+            <li key={link.id} className="group list-none">
               <Link
                 href={link.href}
                 className="flex items-center uppercase text-[12px] font-medium lg:py-8"
@@ -69,10 +69,11 @@ function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          {searchIcon}
-          {login}
-          {wishlist}
-          {cart}
+          {navIcons.map(({ id, href, icon }) => (
+            <Link key={id} href={href}>
+              {icon}
+            </Link>
+          ))}
         </div>
       </div>
     </header>

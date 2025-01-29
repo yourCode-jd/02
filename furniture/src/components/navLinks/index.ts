@@ -1,3 +1,5 @@
+import { login, searchIcon, wishlist, cart } from "../icons/Icons";
+
 // navigation
 export const navLinks = [
     { 
@@ -211,3 +213,10 @@ export const navLinks = [
     },
 
 ]
+// social icons
+export const navIcons = [
+    { id: "search", href: "#", icon: searchIcon },
+    { id: "login", href: "#", icon: login },
+    { id: "wishlist", href: "#", icon: wishlist },
+    { id: "cart", href: "#", icon: cart },
+  ];
