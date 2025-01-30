@@ -25,7 +25,7 @@ const SalesProductCard = ({ product }) => (
       {/* Product Buttons */}
       <ProductBtns />
     </div>
-    <div className="mt-4 text-center text-base text-black tracking-widest">
+    {/* <div className="mt-4 text-center text-base text-black tracking-widest">
       {product?.reviews?.map((item) => (
         <div key={item.id}>
           <div>{item.author}</div>
@@ -50,7 +50,7 @@ const SalesProductCard = ({ product }) => (
           ))}
         </div>
       ))}
-    </div>
+    </div> */}
     {/* Product Title */}
     <h3 className="mt-4 text-center text-base text-black tracking-widest">
       {product.title}

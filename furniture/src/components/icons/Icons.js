@@ -88,3 +88,31 @@ export const startIcon = (
     />
   </svg>
 );
+
+export const emailIcon = (
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 14 14"
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="m3.179 9.393.02.114.476 2.599a.588.588 0 0 0 .895.388c.662-.427 1.527-.994 1.504-1.027zm-1.694-3.69a.756.756 0 0 0-.174 1.315L3.76 8.801l8.7-6.845-7.693 7.579 3.349 2.436a.843.843 0 0 0 1.286-.391l3.582-9.804a.27.27 0 0 0-.35-.345z" />
+  </svg>
+);
+
+export const scrollTop = (
+  <svg
+    className=""
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 20 20"
+    fill="#fff"
+    aria-hidden="true"
+  >
+    <path
+      fillRule="evenodd"
+      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+      clipRule="evenodd"
+    />
+  </svg>
+);

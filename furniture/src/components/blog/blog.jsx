@@ -75,7 +75,7 @@ const Carousel = () => {
       <h2 className="main-heading my-10">Our Blog</h2>
       <Slider {...settings}>
         {slides.map((slide) => (
-          <div key={slide.id} className="!flex items-center gap-10 pb-10">
+          <div key={slide.id} className="!flex items-center gap-10 ">
             <div className="flex items-center justify-center relative h-[450px]">
               <Image
                 src={slide.img}

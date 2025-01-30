@@ -44,7 +44,7 @@ const InstagramFeed = () => {
         {InstItems.map((InstItem) => (
           <div
             key={InstItem.id}
-            className="h-[300px] w-[300px] group cursor-pointer overflow-hidden group"
+            className=" group cursor-pointer overflow-hidden group"
           >
             <Image
               src={InstItem.img}

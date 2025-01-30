@@ -5,7 +5,7 @@ import { logoSlides } from "@/staticDb/data";
 function Brands() {
   return (
     <div className="container">
-      <div className="flex items-center justify-between gap-3 pt-10 pb-20">
+      <div className="flex items-center justify-between gap-3 pt-16 pb-20">
         {logoSlides.map((brand) => (
           <div
             key={brand.id}
