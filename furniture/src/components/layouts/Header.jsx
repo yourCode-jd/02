@@ -1,9 +1,12 @@
+"use client";
 import React from "react";
 import { navLinks, navIcons } from "../navLinks";
 import Link from "next/link";
-import { downArrow } from "../icons/Icons";
+import { downArrow, searchIcon } from "../icons/Icons";
+import { useState } from "react";
 
 function Header() {
+  const [searchOpen, setIsSearchOpen] = useState(false);
   const renderSubMenu = (subMenu) =>
     subMenu?.map((item) => (
       <li key={item.id} className="relative">
@@ -70,12 +73,31 @@ function Header() {
         </nav>
         <div className="flex items-center gap-4">
           {navIcons.map(({ id, href, icon }) => (
-            <Link key={id} href={href}>
+            <Link
+              key={id}
+              href={href}
+              onClick={() => id === "search" && setIsSearchOpen(!searchOpen)}
+            >
               {icon}
             </Link>
           ))}
         </div>
       </div>
+      {searchOpen && (
+        <div className="mt-2 z-10 absolute right-2 w-full bg-white shadow-lg p-4 rounded-lg max-w-96">
+          <input
+            type="text"
+            placeholder="Search..."
+            className="pr-7 w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            className="absolute top-1/2 -translate-y-1/2 right-6 text-gray-600 hover:text-gray-900 text-lg"
+            onClick={() => setIsSearchOpen(false)}
+          >
+            ✖
+          </button>
+        </div>
+      )}
     </header>
   );
 }
