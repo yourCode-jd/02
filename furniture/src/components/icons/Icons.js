@@ -1,3 +1,18 @@
+export const breadcrumb = (
+  <svg
+    width="30"
+    height="30"
+    viewBox="0 0 24 24"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M.5 13h23M.5 7.25h23m-23 11.5h12.46"
+      style="fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.92px"
+    />
+  </svg>
+);
+
 export const downArrow = (
   <svg
     className="-mr-1 ml-0 h-5 w-5"

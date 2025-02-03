@@ -50,33 +50,20 @@ const Carousel = () => {
         </svg>
       </div>
     ),
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   };
 
   return (
     <div className="container">
-      <h2 className="main-heading my-10">Our Blog</h2>
+      <h2 className="main-heading my-6 sm:my-10 text-center md:text-left">
+        Our Blog
+      </h2>
       <Slider {...settings}>
         {slides.map((slide) => (
-          <div key={slide.id} className="!flex items-center gap-10 ">
-            <div className="flex items-center justify-center relative h-[450px]">
+          <div
+            key={slide.id}
+            className="!flex flex-wrap lg:flex-nowrap items-center gap-10 "
+          >
+            <div className="flex items-center justify-center relative h-[300px] md:h-[450px]">
               <Image
                 src={slide.img}
                 width={1920}
@@ -90,10 +77,10 @@ const Carousel = () => {
               <span className="text-xs tracking-[4px] sm:tracking-[8px] inline-block uppercase text-gray-600">
                 NOW ON SALE!
               </span>
-              <h1 className="banner-heading uppercase text-2xl max-w-[80%]">
+              <h1 className="banner-heading uppercase text-2xl xl:max-w-[80%]">
                 Embracing Modern Technology in Home Decor
               </h1>
-              <p className="text-sm sm:text-base max-w-[80%] sm:max-w-[50%] leading-6 sm:leading-7 text-gray-600 font-normal">
+              <p className="text-sm sm:text-base xl:max-w-[50%] leading-6 sm:leading-7 text-gray-600 font-normal">
                 Every woman needs a wallet to keep her cards and cash organised.
                 Find the perfect one for you in our extensive and varied range.
               </p>

@@ -17,6 +17,7 @@ const SalesProductCard = ({ product }) => (
         src={product.img}
         alt={product.alt || "Product image"}
         priority
+        className="w-full h-full object-cover"
       />
 
       {/* Badge */}

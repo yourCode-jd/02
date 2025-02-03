@@ -22,7 +22,7 @@ const Reviews = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -33,10 +33,13 @@ const Reviews = () => {
 
   return (
     <div className="container_large">
-      <div className="pt-20">
+      <div className="pt-10 lg:pt-20">
         <Slider {...settings}>
           {reviews.map((reviewItem) => (
-            <div key={reviewItem.id} className="border border-gray-200 p-14 ">
+            <div
+              key={reviewItem.id}
+              className="border border-gray-200 p-6 lg:p-14 "
+            >
               <div className="flex items-center gap-2">{reviewItem.icon}</div>
               <h3 className="text-base font-medium my-5">{reviewItem.title}</h3>
               <p className="text-sm my-8 text-gray-400">

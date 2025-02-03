@@ -4,12 +4,12 @@ import { categorySlides } from "@/staticDb/data";
 
 function Category() {
   return (
-    <div className="bg-slate-100 pt-16">
+    <div className="bg-slate-100 pt-8 sm:pt-16">
       <div className="container">
         <h2 className="main-heading text-center">TOP FURNITURE CATEGORIES</h2>
-        <ul className="flex items-center justify-between gap-8 pt-10 pb-16 ">
+        <ul className="flex flex-wrap items-center justify-center gap-0 pt-10 pb-10 sm:pb-16 ">
           {categorySlides.map((item) => (
-            <li key={item.id}>
+            <li key={item.id} className="lg:flex-1 md:w-1/3 md:p-4 w-1/ p-2 ">
               <div className="flex items-center justify-center group cursor-pointer overflow-hidden">
                 <Image
                   src={item.img}

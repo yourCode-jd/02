@@ -6,9 +6,9 @@ import { navIcons } from "../navLinks";
 function Footer() {
   return (
     <div className="container">
-      <div className=" py-8 flex justify-between gap-5">
-        <div className="flex items-start gap-5 flex-col flex-1">
-          <ul className="flex items-center justify-center gap-5">
+      <div className="pt-0 md:pt-8 py-8 flex flex-wrap justify-center md:justify-between gap-5">
+        <div className="flex items-center md:items-start gap-4 md:gap-5 flex-col md:flex-1 w-full my-3 md:m-0">
+          <ul className="flex flex-wrap items-center justify-center gap-5">
             <li className="inline-flex">
               <Link
                 href="#"
@@ -28,16 +28,16 @@ function Footer() {
           </ul>
           <Image src="/payment.png" alt="logo" width={280} height={18}></Image>
         </div>
-        <div className="relative flex-1 text-center">
+        <div className="relative md:flex-1 text-center w-full -order-1 md:-order-none">
           <Link
             href="#"
-            className="text-black text-center text-2xl sm:text-3xl capitalize font-medium leading-normal"
+            className="text-black text-center text-3xl capitalize font-medium leading-normal"
           >
             logo
           </Link>
         </div>
-        <div className="relative flex-1">
-          <div className="flex items-end flex-col gap-5">
+        <div className="relative md:flex-1 w-full">
+          <div className="flex items-center md:items-end flex-col gap-3 sm:gap-5">
             <h3 className="text-base font-normal text-gray-500 capitalize">
               Follow Us
             </h3>
