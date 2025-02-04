@@ -3,8 +3,7 @@ import { Poppins } from 'next/font/google'
 import TopBar from '@/components/layouts/TopBar'
 import Header from '@/components/layouts/Header'
 import Footer from '@/components/layouts/Footer'
-import { scrollTop } from "@/components/icons/Icons"
-
+import LoginForm from '@/components/LoginForm'
 const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
@@ -25,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <LoginForm />
         <TopBar />
         <Header />
         {children}
