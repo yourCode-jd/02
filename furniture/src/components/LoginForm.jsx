@@ -19,7 +19,7 @@ function LoginForm() {
         </Link>
       </div>
       {loginFormOpen && (
-        <div className="z-10 absolute w-full bg-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow max-w-lg">
+        <div className="z-10 absolute w-full bg-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow max-w-lg ">
           <form action="" className="relative flex flex-wrap gap-5 p-8">
             <h2 className="text-3xl font-semibold uppercase w-full text-center ">
               Login
@@ -49,7 +49,7 @@ function LoginForm() {
             </button>
             <div
               className="absolute cursor-pointer bg-orange-500 text-white rounded-full w-8 h-8 flex justify-center items-center -top-3 -right-3  text-lg"
-              onClick={() => setIsSearchOpen(false)}
+              onClick={() => setLoginForm(false)}
             >
               ✖
             </div>

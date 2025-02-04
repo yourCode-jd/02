@@ -2,11 +2,11 @@
 import React from "react";
 import { navLinks, navIcons } from "../navLinks";
 import Link from "next/link";
-import { downArrow, searchIcon } from "../icons/Icons";
+import { downArrow } from "../icons/Icons";
 import { useState } from "react";
 
 function Header() {
-  const [searchOpen, setIsSearchOpen] = useState(false);
+  const [activePopup, setIsActivePopup] = useState(null);
   const renderSubMenu = (subMenu) =>
     subMenu?.map((item) => (
       <li key={item.id} className="relative">
@@ -72,30 +72,76 @@ function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          {navIcons.map(({ id, href, icon }) => (
+          {navIcons.map((icon) => (
             <Link
-              key={id}
-              href={href}
-              onClick={() => id === "search" && setIsSearchOpen(!searchOpen)}
+              key={icon.id}
+              href={icon.href}
+              onClick={(e) => {
+                e.preventDefault();
+                setIsActivePopup(activePopup === icon.id ? null : icon.id);
+              }}
             >
-              {icon}
+              {icon.icon}
             </Link>
           ))}
         </div>
       </div>
-      {searchOpen && (
+      {activePopup && (
         <div className="mt-2 z-10 absolute right-2 w-full bg-white shadow-lg p-4 rounded-lg max-w-96">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="pr-7 w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-          <button
-            className="absolute top-1/2 -translate-y-1/2 right-6 text-gray-600 hover:text-gray-900 text-lg"
-            onClick={() => setIsSearchOpen(false)}
-          >
-            ✖
-          </button>
+          {activePopup === "search" && (
+            <div>
+              <input
+                type="text"
+                placeholder="Search..."
+                className="pr-7 w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <button
+                className="absolute top-1/2 -translate-y-1/2 right-6 text-gray-600 hover:text-gray-900 text-lg"
+                onClick={() => setIsActivePopup(null)}
+              >
+                ✖
+              </button>
+            </div>
+          )}
+
+          {activePopup === "login" && (
+            <div className="z-10 absolute w-full bg-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow max-w-lg ">
+              <form action="" className="relative flex flex-wrap gap-5 p-8">
+                <h2 className="text-3xl font-semibold uppercase w-full text-center ">
+                  Login
+                </h2>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Email"
+                  required
+                  className="p-3 border w-full"
+                />
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Password"
+                  required
+                  className="p-3 border w-full "
+                />
+                <button
+                  onClick={() => setIsActivePopup()}
+                  type="submit"
+                  className="bg-orange-600 p-2 min-h-[50px] uppercase text-white min-w-40 ml-auto hover:bg-orange-500 ease-linear duration-150"
+                >
+                  Submit
+                </button>
+                <div
+                  className="absolute cursor-pointer bg-orange-500 text-white rounded-full w-8 h-8 flex justify-center items-center -top-3 -right-3  text-lg"
+                  onClick={() => setIsActivePopup(null)}
+                >
+                  ✖
+                </div>
+              </form>
+            </div>
+          )}
         </div>
       )}
     </header>
