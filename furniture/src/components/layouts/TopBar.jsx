@@ -10,8 +10,8 @@ function TopBar() {
             10% discount for registered users
           </div>
           <div className="flex gap-3 items-center">
-            <Dropdown title="USD" />
-            <Dropdown title="English" />
+            <Dropdown title="USD" options={["EUR", "USD", "GBP"]} />
+            <Dropdown title="Eng" options={["English", "Spanish", "French"]} />
           </div>
         </div>
       </div>

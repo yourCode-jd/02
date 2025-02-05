@@ -248,4 +248,3 @@ export const InstItems = [
     alt: "brand logo",
   },
 ];
-

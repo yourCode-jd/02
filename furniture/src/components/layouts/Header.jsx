@@ -87,16 +87,16 @@ function Header() {
         </div>
       </div>
       {activePopup && (
-        <div className="mt-2 z-10 absolute right-2 w-full bg-white shadow-lg p-4 rounded-lg max-w-96">
+        <div className="mt-2 z-10 absolute right-2 w-full bg-white shadow-lg rounded-lg max-w-96">
           {activePopup === "search" && (
-            <div>
+            <div className="rounded-lg shadow-sm overflow-hidden">
               <input
                 type="text"
                 placeholder="Search..."
-                className="pr-7 w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="pr-7 w-full text-sm p-2 min-h-[44px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button
-                className="absolute top-1/2 -translate-y-1/2 right-6 text-gray-600 hover:text-gray-900 text-lg"
+                className="absolute top-1/2 -translate-y-1/2 right-2 text-gray-600 hover:text-gray-900 text-lg"
                 onClick={() => setIsActivePopup(null)}
               >
                 ✖
@@ -105,9 +105,9 @@ function Header() {
           )}
 
           {activePopup === "login" && (
-            <div className="z-10 absolute w-full bg-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow max-w-lg ">
-              <form action="" className="relative flex flex-wrap gap-5 p-8">
-                <h2 className="text-3xl font-semibold uppercase w-full text-center ">
+            <div className="">
+              <form action="" className="relative flex flex-wrap gap-4 p-8">
+                <h2 className="text-2xl font-semibold uppercase w-full text-center ">
                   Login
                 </h2>
                 <input
@@ -116,7 +116,7 @@ function Header() {
                   id=""
                   placeholder="Email"
                   required
-                  className="p-3 border w-full"
+                  className="p-2 min-h-[44px] border w-full text-sm"
                 />
                 <input
                   type="password"
@@ -124,17 +124,17 @@ function Header() {
                   id=""
                   placeholder="Password"
                   required
-                  className="p-3 border w-full "
+                  className="p-2 min-h-[44px] border w-full text-sm "
                 />
                 <button
                   onClick={() => setIsActivePopup()}
                   type="submit"
-                  className="bg-orange-600 p-2 min-h-[50px] uppercase text-white min-w-40 ml-auto hover:bg-orange-500 ease-linear duration-150"
+                  className="bg-orange-600 p-2 min-h-11 uppercase text-white min-w-32 ml-auto hover:bg-orange-500 ease-linear duration-150"
                 >
                   Submit
                 </button>
                 <div
-                  className="absolute cursor-pointer bg-orange-500 text-white rounded-full w-8 h-8 flex justify-center items-center -top-3 -right-3  text-lg"
+                  className="absolute cursor-pointer bg-orange-500 text-white rounded-full w-8 h-8 flex justify-center items-center -top-2 -right-2  text-lg"
                   onClick={() => setIsActivePopup(null)}
                 >
                   ✖
