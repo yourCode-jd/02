@@ -4,7 +4,6 @@ import TopBar from '@/components/layouts/TopBar'
 import Header from '@/components/layouts/Header'
 import Footer from '@/components/layouts/Footer'
 // import LoginForm from '@/components/LoginForm'
-import TopDrop from '@/components/TopDrop'
 const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
